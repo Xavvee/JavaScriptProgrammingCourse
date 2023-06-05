@@ -1,0 +1,139 @@
+aside h1,
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  margin-top: 0.1vh;
+  margin-left: 1%;
+  margin-right: auto;
+}
+
+footer {
+  padding: 0.5%;
+  font-size: 1.1rem;
+
+}
+
+header {
+  height: fit-content;
+}
+
+header h1 {
+  padding: 0.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+
+main {
+  width: 85%;
+}
+
+main h1 {
+  font-size: 2.1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 3%;
+  margin-inline-end: 3%;
+}
+
+main blockquote {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 3%;
+  margin-inline-end: 3%;
+}
+
+nav {
+  height: fit-content;
+  width: 30%;
+  margin-bottom: 2vh;
+  margin-top: auto;
+  min-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+nav li {
+  font-size: 1.1rem;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.marginer {
+  margin-bottom: auto;
+  margin-top: 2vh;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.borderer {
+  border: 1px solid black;
+  box-shadow: 0 0 5px 0 black;
+}
+
+.azure {
+  background-color: azure;
+}
+
+.colorChange {
+  animation: zmiana 5s infinite alternate;
+}
+
+.flexian {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftCollumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: 2vh;
+}
+
+.rightCollumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@keyframes zmiana {
+  from {
+    color: red;
+  }
+
+  to {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flexian {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .leftCollumn,
+  .rightCollumn {
+    width: 100%
+  }
+
+  main,
+  nav,
+  aside {
+    width: 100%;
+  }
+
+}
